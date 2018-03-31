@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/_20120326_2067137661"
+    tools:context="com.example.bangaram.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/uda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/uda" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/ud"
+       android:textSize="@dimen/ty"
+       android:layout_marginLeft="@dimen/tdp"
+       android:layout_marginTop="@dimen/tty"
+       android:textStyle="bold"
+       android:textColor="@color/White"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/fty"
+            android:layout_height="@dimen/fty"
+            android:src="@drawable/call"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/num"
+            android:autoLink="phone"
+            android:textSize="@dimen/tf"
+            android:layout_marginTop="@dimen/tty"
+            android:textStyle="bold"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <ImageView
+           android:layout_width="@dimen/fty"
+           android:layout_height="@dimen/fty"
+           android:src="@drawable/addd"
+           android:layout_marginLeft="@dimen/tty"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/web"
+           android:autoLink="web"
+           android:textSize="@dimen/tf"
+           android:layout_marginLeft="@dimen/ftn"
+           android:textStyle="bold"
+           android:textColor="@color/White"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/fty"
+            android:layout_height="@dimen/fty"
+            android:src="@drawable/images"
+            android:layout_margin="@dimen/tty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:textSize="@dimen/tf"
+            android:autoLink="map"
+            android:layout_marginTop="@dimen/tn"
+            android:textStyle="bold"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+</LinearLayout>
+
